@@ -1,11 +1,13 @@
-function Carro() {
+function Carro(props) {
+
+   console.log(props.nome);
   return (
     <div>
-      <h2>Volksvagem</h2>
+      <h2> {props.nome} </h2>
       <ul>
-        <li>Cor: Azul</li>
-        <li>Ano: 2018</li>
-        <li>Flex: Não</li>
+        <li>Cor:{props.cor}</li>
+        <li>Ano:{props.ano}</li>
+        <li>Flex:{String(props.isFlex)}</li>
       </ul>
     </div>
   );
